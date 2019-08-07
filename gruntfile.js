@@ -1,13 +1,26 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
+		browserify: {
+			'./dist/main.js': ['./src/scripts/main.js']
+		},
 		copy: {
-			srcToSamples: {
+			sourceToDist: { 
 				files: [
 					{
 						expand: true,
 						cwd: './src',
 						src: ['**'],
-						dest: '../../sandbox/integration/amd'
+						dest: './dist'
+					}
+				]
+			},
+			jschartingToDist: {
+				files: [
+					{
+						expand: true,
+						cwd: './node_modules/jscharting',
+						src: ['**'],
+						dest: './dist/jscharting'
 					}
 				]
 			}
@@ -15,5 +28,12 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.registerTask('default', ['copy:srcToSamples']);
+	grunt.loadNpmTasks('grunt-browserify');
+
+	grunt.registerTask(
+		'default',
+		[
+			'copy:sourceToDist',
+			'copy:jschartingToDist'
+		]);
 }

@@ -2,14 +2,15 @@
   "name": "amd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build-prod": "grunt"
+    "build": "grunt"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-copy": "^1.0.0"
+    "grunt": "^1.0.4",
+    "grunt-contrib-copy": "^1.0.0",
+    "jscharting": "^2.8.0-1",
+    "requirejs": "^2.3.6"
   }
 }
