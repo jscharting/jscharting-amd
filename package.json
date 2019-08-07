@@ -10,7 +10,6 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-copy": "^1.0.0",
-    "jscharting": "^2.8.0-1",
-    "requirejs": "^2.3.6"
+    "jscharting": "^2.8.0-1"
   }
 }
