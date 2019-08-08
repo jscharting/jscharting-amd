@@ -1,8 +1,5 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
-		browserify: {
-			'./dist/main.js': ['./src/scripts/main.js']
-		},
 		copy: {
 			sourceToDist: { 
 				files: [
@@ -28,7 +25,6 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-browserify');
 
 	grunt.registerTask(
 		'default',
