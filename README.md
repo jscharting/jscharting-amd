@@ -15,7 +15,7 @@ This set of samples demonstrate how to use JSCharting as an amd module with Requ
 1) Put JSCharting in separate folder.
 2) Import and use JSCharting
 ```javascript
-requirejs(['jscharting/jscharting'], function (JSC) {
+requirejs(['jscharting/dist/jscharting'], function (JSC) {
 	new JSC.Chart({
 		targetElement: 'chartContainer',
 		...
