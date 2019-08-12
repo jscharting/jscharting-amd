@@ -12,8 +12,28 @@ This set of samples demonstrate how to use JSCharting as an amd module with Requ
 
 ### How to use
 
-1) Put JSCharting in separate folder.
-2) Import and use JSCharting
+Install the necessary packages including JSCharting.
+
+```console
+npm install
+```
+
+Now you can build an application.
+
+```console
+npm run build
+```
+
+Also you can run dev server http://localhost:5000/
+
+```console
+npm run start
+```
+
+### Hot it works
+
+After build it copies all jscharting resources from node_modules to dist folder after that you can use it by require jscharting/dist/jscharting module.
+
 ```javascript
 requirejs(['jscharting/dist/jscharting'], function (JSC) {
 	new JSC.Chart({
